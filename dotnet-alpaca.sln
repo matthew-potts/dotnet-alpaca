@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-alpaca-trade", "dotnet-alpaca-trade\dotnet-alpaca-trade.csproj", "{5EE4952C-8A7C-46B0-8941-88BF11C7FA67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-alpaca-data", "dotnet-alpaca-data\dotnet-alpaca-data.csproj", "{15585EC6-7EE3-482D-8535-A58AA22F7B3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EE4952C-8A7C-46B0-8941-88BF11C7FA67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE4952C-8A7C-46B0-8941-88BF11C7FA67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE4952C-8A7C-46B0-8941-88BF11C7FA67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE4952C-8A7C-46B0-8941-88BF11C7FA67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15585EC6-7EE3-482D-8535-A58AA22F7B3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15585EC6-7EE3-482D-8535-A58AA22F7B3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15585EC6-7EE3-482D-8535-A58AA22F7B3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15585EC6-7EE3-482D-8535-A58AA22F7B3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
