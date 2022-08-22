@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Linq;
 using Alpaca.Markets;
 using System.Threading.Tasks;
 using System.Configuration;
@@ -10,12 +12,18 @@ namespace AlpacaExample
 
         public static async Task Main()
         {
+
+            var section = (ConfigurationManager.GetSection("DeviceSettings/MajorCommands")
+                as Hashtable)
+                .Cast<System.Collections.DictionaryEntry>()
+                .ToDictionary(n=>n.Key.ToString(), n=>n.Value.ToString());
+                
             try
             {
                 var client = Environments.Paper
                     .GetAlpacaTradingClient(new SecretKey(
-                        ConfigurationManager.AppSettings["KeyID"],
-                        ConfigurationManager.AppSettings["SecretKeyID"]));
+                        section["KeyID"],
+                        section["SecretKeyID"]));
 
                 var clock = await client.GetClockAsync();
 
