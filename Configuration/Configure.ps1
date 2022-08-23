@@ -14,6 +14,7 @@ param(
 [xml] $ConfigFile = Get-Content -Path "$pathToFile/app.config" 
 Write-Host "$ConfigFile"
 
-Write-Host "$($ConfigFile.InnerXml)"
-
-Write-Host "$($ConfigFile.OuterXml)"
+foreach ($token in $ConfigFile.Configuration.DeviceSettings.MajorCommands) {
+    
+    Write-Host "$($token.key)"
+}

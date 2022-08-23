@@ -22,4 +22,7 @@
   <ItemGroup>
     <None Include="..\.editorconfig" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dotnet-alpaca-trade\dotnet-alpaca-trade.csproj" />
+  </ItemGroup>
 </Project>

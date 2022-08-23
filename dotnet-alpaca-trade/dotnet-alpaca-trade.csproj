@@ -21,10 +21,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Update="app.config">
+    <None Update="dotnet-alpaca-trade.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="dotnet-alpaca-trade.config">
+    <None Update="app.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
