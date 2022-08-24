@@ -6,7 +6,7 @@ using dotnet_alpaca_trade;
 
 namespace dotnet_alpaca_data
 {
-	public class DataClient
+	public class ConfigureDataClient
 	{
 
        public static Dictionary<string, string> SetConfiguration()
@@ -19,12 +19,14 @@ namespace dotnet_alpaca_data
              return section;
        }
 
-       public static void EstablishDataClient()
+       public static IAlpacaDataClient EstablishDataClient()
        {
              var config = SetConfiguration();
              var client = Environments.Paper.GetAlpacaDataClient
                     (new SecretKey(config["KeyID"], config["SecretKeyID"]));
-       }
+
+            return client;
+        }
         
 	}
 }

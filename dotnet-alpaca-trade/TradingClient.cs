@@ -10,7 +10,8 @@ namespace dotnet_alpaca_trade
 
         public Account()
         {
-            config = Configure.SetConfiguration();
+            // SetConfiguration already called when calling EstablishTradingClient(), so
+            // don't need to call it again here. 
             account = Configure.EstablishTradingClient().Result;
         }
 
