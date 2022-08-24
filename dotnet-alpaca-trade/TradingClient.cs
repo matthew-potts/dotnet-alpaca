@@ -5,21 +5,18 @@ using Alpaca.Markets;
 
 namespace dotnet_alpaca_trade
 {
-	public class TradingClient
+	public class Account
 	{
-        public static async Task<IAccount> EstablishTradingClient()
+
+        public Account()
         {
-            var config = Configure.SetConfiguration();
-
-            var client = Alpaca.Markets.Environments.Paper
-                .GetAlpacaTradingClient(new SecretKey(config["KeyID"]
-                , config["SecretKeyID"]));
-
-            var account = await client.GetAccountAsync();
-
-            return account;
-            
+            config = Configure.SetConfiguration();
+            account = Configure.EstablishTradingClient().Result;
         }
+
+        public Dictionary<string, string> config;
+        public IAccount account;
+
     }
 }
 

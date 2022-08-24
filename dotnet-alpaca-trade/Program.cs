@@ -13,7 +13,7 @@ namespace dotnet_alpaca_trade
         public static void Main()
         {
 
-            IAccount account = TradingClient.EstablishTradingClient().Result;
+            IAccount account = new Account().account;
 
             if (account.IsTradingBlocked)
             {
