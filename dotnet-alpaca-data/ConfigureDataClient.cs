@@ -2,7 +2,6 @@
 using System.Configuration;
 using System.Collections;
 using Alpaca.Markets;
-using dotnet_alpaca_trade;
 
 namespace dotnet_alpaca_data
 {

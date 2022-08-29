@@ -28,4 +28,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dotnet-alpaca-data\dotnet-alpaca-data.csproj" />
+  </ItemGroup>
 </Project>
