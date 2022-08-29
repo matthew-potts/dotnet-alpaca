@@ -11,7 +11,6 @@ namespace dotnet_alpaca_data
 			client = ConfigureDataClient.EstablishDataClient();
 		}
 
-
 		public Dictionary<string, string> config;
 		public IAlpacaDataClient client;
 	}
