@@ -11,7 +11,37 @@ namespace dotnet_alpaca_data
 			client = ConfigureDataClient.EstablishDataClient();
 		}
 
-		public Dictionary<string, string> config;
+        public static List<string> ReadQqqCsv()
+        {
+            List<string> tickerList = null;
+            try
+            {
+                using (StreamReader sr = new StreamReader("/Users/matthewpotts/" +
+                    "Projects/dotnet-alpaca/dotnet-alpaca-data/qqq.txt"))
+                {
+                    tickerList = new List<string>();
+                    string line;
+
+
+                    while ((line = sr.ReadLine()) != null)
+                    {
+
+                        tickerList.Add(line.Split(",")[2].Trim());
+                    }
+                }
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.WriteLine("The file could not be read. Exiting...");
+
+            }
+            return tickerList;
+
+        }
+
+        public Dictionary<string, string> config;
 		public IAlpacaDataClient client;
 	}
 }

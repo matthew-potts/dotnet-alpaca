@@ -1,5 +1,4 @@
-﻿Fund Ticker,Security Identifier,Holding Ticker,Shares/Par Value,MarketValue,Weight,Name,Class of Shares,Sector,Date
-QQQ,037833100,AAPL ,"38,081,754","13,892,223,859.20",12.060,Apple Inc,Common Stock,Information Technology,06/30/2020
+﻿QQQ,037833100,AAPL ,"38,081,754","13,892,223,859.20",12.060,Apple Inc,Common Stock,Information Technology,06/30/2020
 QQQ,594918104,MSFT ,"66,628,466","13,559,559,115.66",11.772,Microsoft Corp,Common Stock,Information Technology,06/30/2020
 QQQ,023135106,AMZN ,"4,382,190","12,089,673,415.80",10.496,Amazon.com Inc,Common Stock,Consumer Discretionary,06/30/2020
 QQQ,30303M102,FB ,"21,126,485","4,797,190,948.95",4.165,Facebook Inc,Common Stock,Communication Services,06/30/2020
