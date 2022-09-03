@@ -2,7 +2,6 @@
 
 namespace dotnet_alpaca_data
 {
-	// changed to an executable for now - change back to ClassLib later. 
 
 	public class DataClient
 	{
