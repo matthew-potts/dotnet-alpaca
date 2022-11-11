@@ -3,9 +3,9 @@ using System.Data.SqlClient;
 
 namespace database
 {
-    public class Program
+    public class OpenSqlConnection
     {
-        private static void OpenSqlConnection(string connectionString)
+            public static void openSqlConnection(string connectionString)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

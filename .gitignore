@@ -3,3 +3,5 @@
 */bin
 *.editorconfig
 .DS_Store
+dotnet-alpaca-trade/app.config
+*.config

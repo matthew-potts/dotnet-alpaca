@@ -2,23 +2,14 @@
 using System.Configuration;
 using System.Collections;
 using System.Collections.Generic;
+using dotnet_alpaca_config;
 using Alpaca.Markets;
 
 namespace dotnet_alpaca_trade
 {
-    public class Configure
+    public class EstablishTradingClient
     {
-        public static Dictionary<string, string> SetConfiguration()
-        {
-            var section = (ConfigurationManager.GetSection("DeviceSettings/MajorCommands")
-            as Hashtable)
-            .Cast<System.Collections.DictionaryEntry>()
-            .ToDictionary(n => n.Key.ToString(), n => n.Value.ToString());
-
-            return section;
-        }
-
-        public static async Task<IAccount> EstablishTradingClient() // allows one to establish account instance
+        public static async Task<IAccount> establishTradingClient() // allows one to establish account instance
         {
             var config = Configure.SetConfiguration();
 

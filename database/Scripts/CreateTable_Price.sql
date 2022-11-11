@@ -1,0 +1,1 @@
+CREATE TABLE "public"."price" ("id" serial NOT NULL, "date" date NOT NULL, "price" float, PRIMARY KEY "ID")

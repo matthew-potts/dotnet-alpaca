@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections;
-using System.Linq;
 using Alpaca.Markets;
-using System.Threading.Tasks;
-using System.Configuration;
 using dotnet_alpaca_data;
-
+using database;
 
 namespace dotnet_alpaca_trade
 {
     internal static class Program
     {
-        public static async Task Main(string[] args)
+
+        public static void Main()
+        {
+            OpenSqlConnection.openSqlConnection();
+        }
+
+        public static async Task WriteTickers()
         {
 
             IAccount account = new Account().account;
@@ -34,6 +37,8 @@ namespace dotnet_alpaca_trade
             }
 
         }
+
+
 
         public static async Task<IPage<IBar>> GetBars(string ticker, IAlpacaDataClient dataClient)
 
