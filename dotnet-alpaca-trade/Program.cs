@@ -11,7 +11,8 @@ namespace dotnet_alpaca_trade
 
         public static void Main()
         {
-            OpenSqlConnection.openSqlConnection();
+            DBConnection dbConnection = new DBConnection();
+            dbConnection.openSqlConnection();
         }
 
         public static async Task WriteTickers()

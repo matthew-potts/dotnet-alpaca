@@ -12,8 +12,21 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="System.Data.SqlClient" />
+    <None Remove="Npgsql" />
+    <None Remove="System.Configuration.ConfigurationManager" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="Npgsql" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Configuration.ConfigurationManager">
+      <HintPath>..\..\TwitterAPI\TwitterApi\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="app.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>

@@ -11,9 +11,11 @@
   <ItemGroup>
     <None Remove="Alpaca.Markets" />
     <None Remove="System.Configuration.ConfigurationManager" />
+    <None Remove="Npgsql" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Alpaca.Markets" Version="6.1.6" />
+    <PackageReference Include="Npgsql" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Configuration.ConfigurationManager">
