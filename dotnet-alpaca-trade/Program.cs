@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Data;
 using System.Collections;
+using System.Configuration;
 using Alpaca.Markets;
 using dotnet_alpaca_data;
-using database;
+using System.Data.SqlClient;
+using Npgsql;
 
 namespace dotnet_alpaca_trade
 {
@@ -11,8 +14,7 @@ namespace dotnet_alpaca_trade
 
         public static void Main()
         {
-            DBConnection dbConnection = new DBConnection();
-            dbConnection.openSqlConnection();
+
         }
 
         public static async Task WriteTickers()
@@ -40,7 +42,6 @@ namespace dotnet_alpaca_trade
         }
 
 
-
         public static async Task<IPage<IBar>> GetBars(string ticker, IAlpacaDataClient dataClient)
 
         {
@@ -51,7 +52,8 @@ namespace dotnet_alpaca_trade
                 new HistoricalBarsRequest(ticker, from, to, BarTimeFrame.Day));
 
             return bars;
-            
-        }        
+        
+        }
+
     }
 }

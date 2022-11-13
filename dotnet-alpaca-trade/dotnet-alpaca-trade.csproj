@@ -26,9 +26,6 @@
     <None Update="dotnet-alpaca-trade.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="app.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Configuration\dotnet-alpaca-config.csproj" />
