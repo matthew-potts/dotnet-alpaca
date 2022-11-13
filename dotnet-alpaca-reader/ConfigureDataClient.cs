@@ -3,7 +3,7 @@ using System.Configuration;
 using System.Collections;
 using Alpaca.Markets;
 
-namespace dotnet_alpaca_data
+namespace dotnet_alpaca_reader
 {
 	public class ConfigureDataClient
 	{

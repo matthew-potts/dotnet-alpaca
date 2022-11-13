@@ -2,24 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>dotnet_alpaca_reader</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Configure.ps1" />
-    <None Remove="Alpaca.Markets" />
     <None Remove="System.Configuration.ConfigurationManager" />
-    <None Remove="Npgsql" />
-    <None Remove="app.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Alpaca.Markets" Version="6.1.6" />
-    <PackageReference Include="Npgsql" Version="7.0.0" />
+    <None Remove="Alpaca.Markets" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Configuration.ConfigurationManager">
       <HintPath>..\..\TwitterAPI\TwitterApi\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Alpaca.Markets" Version="6.1.6" />
   </ItemGroup>
 </Project>

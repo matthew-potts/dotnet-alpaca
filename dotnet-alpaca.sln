@@ -18,6 +18,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-alpaca-config", "Con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "database.Tests", "database.Tests\database.Tests.csproj", "{55FF7506-DCB6-4271-A4D0-CF40A34B9D15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-alpaca-reader", "dotnet-alpaca-reader\dotnet-alpaca-reader.csproj", "{6CE2929D-8114-4F42-BFA5-AAF3DBAD3C54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,5 +49,9 @@ Global
 		{55FF7506-DCB6-4271-A4D0-CF40A34B9D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55FF7506-DCB6-4271-A4D0-CF40A34B9D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55FF7506-DCB6-4271-A4D0-CF40A34B9D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CE2929D-8114-4F42-BFA5-AAF3DBAD3C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CE2929D-8114-4F42-BFA5-AAF3DBAD3C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CE2929D-8114-4F42-BFA5-AAF3DBAD3C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CE2929D-8114-4F42-BFA5-AAF3DBAD3C54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

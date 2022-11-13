@@ -1,11 +1,11 @@
 ﻿using Alpaca.Markets;
 
-namespace dotnet_alpaca_data
+namespace dotnet_alpaca_reader
 {
 
-	public class DataClient
+	public class QQQReader
 	{
-		public DataClient()
+		public QQQReader()
 		{
 			client = ConfigureDataClient.EstablishDataClient();
 		}
@@ -16,16 +16,16 @@ namespace dotnet_alpaca_data
             try
             {
                 using (StreamReader sr = new StreamReader("/Users/matthewpotts/" +
-                    "Projects/dotnet-alpaca/dotnet-alpaca-data/qqq.txt"))
+                    "Projects/dotnet-alpaca/dotnet-alpaca-reader/qqq.txt"))
                 {
                     tickerList = new List<string>();
                     string line;
 
-
                     while ((line = sr.ReadLine()) != null)
                     {
-
-                        tickerList.Add(line.Split(",")[2].Trim());
+                        var ticker = line.Split(",")[2].Trim();
+                        string modifiedTicker = $"'{ticker}'";
+                        tickerList.Add(modifiedTicker.ToUpper());
                     }
                 }
             }

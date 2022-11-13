@@ -12,9 +12,10 @@
     <None Remove="Alpaca.Markets" />
     <None Remove="System.Configuration.ConfigurationManager" />
     <None Remove="Npgsql" />
+    <None Remove="..\.editorconfig" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Alpaca.Markets" Version="6.0.6" />
+    <PackageReference Include="Alpaca.Markets" Version="6.1.6" />
     <PackageReference Include="Npgsql" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
@@ -23,16 +24,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\.editorconfig" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="app.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Update="DatabaseInsert.cs">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dotnet-alpaca-reader\dotnet-alpaca-reader.csproj" />
   </ItemGroup>
 </Project>
